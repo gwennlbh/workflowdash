@@ -1,0 +1,29 @@
+import type { SearchIssuesResponse } from './github.js';
+
+export component Repo({ owner, name }: { owner: string; name: string }) {
+	const data: SearchIssuesResponse = await fetch(
+		`https://api.github.com/search/issues?${
+			new URLSearchParams({
+				q: `repo:${owner}/${name} is:pr author:renovate[bot] state:open`,
+			})
+		}`,
+	).then((res) => res.json());
+
+	<section class="repo">
+		<h2>{`${owner}/${name}`}</h2>
+		for (const pr of data.items) {
+			<article class={{ draft: pr.draft }}>
+				<header>
+					<h3>{pr.title}</h3>
+				</header>
+				<p>{pr.body}</p>
+			</article>
+		}
+	</section>
+
+	<style>
+		article.draft h3 {
+			font-style: italic;
+		}
+	</style>
+}
