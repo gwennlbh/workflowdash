@@ -21,7 +21,7 @@
 		"@ripple-ts/eslint-plugin": "latest",
 		"prettier": "^3.6.2",
 		"@ripple-ts/prettier-plugin": "latest",
-		"typescript": "^5.9.2",
+		"typescript": "^5.9.3",
 		"vite": "^7.1.4",
 		"@ripple-ts/vite-plugin": "latest",
 		"@ripple-ts/typescript-plugin": "latest"
