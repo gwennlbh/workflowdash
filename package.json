@@ -17,7 +17,7 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"eslint": "^9.0.0",
+		"eslint": "^9.39.5",
 		"@ripple-ts/eslint-plugin": "latest",
 		"prettier": "^3.6.2",
 		"@ripple-ts/prettier-plugin": "latest",
