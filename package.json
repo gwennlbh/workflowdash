@@ -22,7 +22,7 @@
 		"prettier": "^3.6.2",
 		"@ripple-ts/prettier-plugin": "latest",
 		"typescript": "^5.9.2",
-		"vite": "^7.1.4",
+		"vite": "^7.3.6",
 		"@ripple-ts/vite-plugin": "latest",
 		"@ripple-ts/typescript-plugin": "latest"
 	},
